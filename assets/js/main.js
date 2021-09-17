@@ -18,6 +18,7 @@ const getPost = async () => {
         <h1>${news.featured}</h1>
         <img src="https://www.vagalume.com.br/${news.pic_src}">
         <p>${news.headline}</p>
+        <a href="${news.url}" target="_blank">Ler Mais</a>
       </div>
     </div>
 

@@ -83,7 +83,7 @@ header
   border-radius: 5px
 
   .card
-    margin-top: 50px 
+    margin-top: 50px
     padding: 30px
     border: none
 
@@ -93,7 +93,7 @@ header
       object-fit: cover
 
     h1
-      margin-top: 20px 
+      margin-top: 20px
       font-family: 'Lexend Deca', sans-serif
       font-weight: 400
       font-size: 26px
@@ -101,6 +101,7 @@ header
 
     .data
       display: flex
+      align-items: center
       justify-content: space-between
       font-family: 'Lexend Deca', sans-serif
       font-style: normal
@@ -115,7 +116,22 @@ header
       font-size: 18px
       line-height: 32px
 
+    a
+      display: flex
+      justify-content: center
+      width: 30%
+      margin: 0 auto
+      color: variables.$white
+      padding: 15px 10px
+      background: variables.$linear
+
+      &:hover
+        background: variables.$blue
+
 @media (max-width: 600px)
   header
     .container
       width: 80%
+
+  .containerNews
+    width: 80%

@@ -103,6 +103,7 @@ header {
 }
 .containerNews .card .data {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: "Lexend Deca", sans-serif;
   font-style: normal;
@@ -117,9 +118,25 @@ header {
   font-size: 18px;
   line-height: 32px;
 }
+.containerNews .card a {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 0 auto;
+  color: #FFF;
+  padding: 15px 10px;
+  background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+.containerNews .card a:hover {
+  background: #3EA1DB;
+}
 
 @media (max-width: 600px) {
   header .container {
+    width: 80%;
+  }
+
+  .containerNews {
     width: 80%;
   }
 }
