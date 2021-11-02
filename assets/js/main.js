@@ -1,3 +1,19 @@
+const input = document.querySelector('#input')
+
+input.addEventListener('input', e => {
+  const inputValue = e.target.value.toLocaleLowerCase()
+  const containerNewsH1 = document.querySelectorAll('.containerNews')
+
+  containerNewsH1.forEach(e => {
+    const containerNewsH1 = e.querySelector('.containerNews h1').textContent.toLocaleLowerCase()
+    if(containerNewsH1.includes(inputValue)) {
+      e.style.display = 'flex'
+      return
+    }
+      e.style.display = 'none'
+  })
+})
+
 const getPost = async () => {
   const url = await fetch(`https://www.vagalume.com.br/news/index.js`)
   data = await url.json()
